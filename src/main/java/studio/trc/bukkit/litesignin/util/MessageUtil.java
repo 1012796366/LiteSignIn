@@ -425,6 +425,8 @@ public class MessageUtil
         ENGLISH("English");
         
         public static Language getLocaleLanguage() {
+            return SIMPLIFIED_CHINESE;
+            /*
             Locale lang = Locale.getDefault();
             if (lang.equals(Locale.SIMPLIFIED_CHINESE)) {
                 return SIMPLIFIED_CHINESE;
@@ -437,6 +439,7 @@ public class MessageUtil
             } else {
                 return ENGLISH;
             }
+            */
         }
         
         private final String folderName;
